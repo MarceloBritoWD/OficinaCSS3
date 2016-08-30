@@ -1,0 +1,101 @@
+/* RESET */
+@import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+/* ESTILOS */
+body {
+  /*background: #000;*/
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  background: #333;
+}
+
+.menu {
+  width: 100%;
+  height: 40px;
+  background: #f3f3f3;
+}
+
+.menu ul {
+  margin: 7px 0 0 7px;
+  float: left;
+}
+.menu ul li {
+  display: inline;
+  padding: 7px 7px 12px 5px;
+  border-right: 1px solid #ccc;
+  border-top: 3px solid rgba(255,255,255,0);
+  transition: all .3s ease-in-out;
+}
+.menu ul li:last-child {
+  border-right: none;
+}
+
+.menu ul li:nth-child(2):hover {
+  border-top: 3px solid red;
+}
+.menu ul li:nth-child(3):hover {
+  border-top: 3px solid green;
+}
+.menu ul li:nth-child(4):hover {
+  border-top: 3px solid orange;
+}
+.menu ul li:nth-child(5):hover {
+  border-top: 3px solid orange;
+}
+.menu ul li:nth-child(6):hover {
+  border-top: 3px solid blue;
+}
+.menu ul li:nth-child(7):hover {
+  border-top: 3px solid grey;
+}
+
+
+
+
+.menu ul li a {
+  font-family: 'Baloo Tamma', cursive;
+  font-size: 16px;
+}
+
+
+
+.menu ul li:nth-child(1) a {
+  color: blue;
+}
+.menu ul li:nth-child(2) a {
+  color: red;
+}
+.menu ul li:nth-child(3) a {
+  color: green;
+}
+.menu ul li:nth-child(4) a {
+  color: orange;
+}
+.menu ul li:nth-child(5) a {
+  color: orange;
+}
+.menu ul li:nth-child(6) a {
+  color: blue;
+}
+.menu ul li:nth-child(7) a {
+  color: grey;
+}
