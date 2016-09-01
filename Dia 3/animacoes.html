@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+    .circulo {
+      width: 40px;
+      height: 40px;
+      /*border-radius: 50%;*/
+      background: red;
+      position: absolute;
+      animation: animacao1 4s infinite;
+    }
+
+    @keyframes animacao1 {
+      0% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background: red;
+      }
+
+      50% {
+        top: 90%;
+        left: 90%;
+        transform: rotate(180deg);
+        border-radius: 50%;
+      }
+
+      100% {
+        top: 0;
+        left: 0;
+        transform: rotate(360deg);
+        background: blue;
+      }
+    }
+  </style>
+  <body>
+    <div class="circulo"></div>
+  </body>
+</html>

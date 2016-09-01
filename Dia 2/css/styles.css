@@ -44,6 +44,7 @@ body {
   border-right: 1px solid #ccc;
   border-top: 3px solid rgba(255,255,255,0);
   transition: all .3s ease-in-out;
+  margin-left: -4px;
 }
 .menu ul li:last-child {
   border-right: none;
