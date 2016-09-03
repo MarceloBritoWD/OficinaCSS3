@@ -13,18 +13,18 @@
         transform: translate(-50%,-50%);
       }
 
-      .circulo {
+      .esfera {
         width: 60px;
         height: 60px;
         border-radius: 50%;
         display: table;
       }
 
-      .circulo1 {
+      .esfera1 {
         left: 0;
         position: absolute;
         background: blue;
-        animation: anim-circulo1 5s infinite;
+        animation: anim-esfera1 5s infinite;
         background: blue; /* For browsers that do not support gradients */
         background: -webkit-radial-gradient(blue, #0000BB); /* Safari 5.1 to 6.0 */
         background: -o-radial-gradient(blue, #0000BB); /* For Opera 11.6 to 12.0 */
@@ -32,11 +32,11 @@
         background: radial-gradient(blue, #0000BB); /* Standard syntax */
       }
 
-      .circulo2 {
+      .esfera2 {
         right: 0;
         position: absolute;
         background: red;
-        animation: anim-circulo2 5s infinite;
+        animation: anim-esfera2 5s infinite;
         background: red; /* For browsers that do not support gradients */
         background: -webkit-radial-gradient(red, #A30000); /* Safari 5.1 to 6.0 */
         background: -o-radial-gradient(red, #A30000); /* For Opera 11.6 to 12.0 */
@@ -45,7 +45,7 @@
       }
 
 
-     @keyframes anim-circulo1 {
+     @keyframes anim-esfera1 {
        0%{
          left: 0;
          transform: scale(1);
@@ -73,7 +73,7 @@
        }
      }
 
-     @keyframes anim-circulo2 {
+     @keyframes anim-esfera2 {
        0%{
          right: 0;
          transform: scale(1);
@@ -106,8 +106,8 @@
   </head>
   <body>
     <div class="box">
-      <div class="circulo circulo1"></div>
-      <div class="circulo circulo2"></div>
+      <div class="esfera esfera1"></div>
+      <div class="esfera esfera2"></div>
     </div>
   </body>
 </html>
