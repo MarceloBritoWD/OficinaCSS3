@@ -3,100 +3,107 @@
   <head>
     <meta charset="utf-8">
     <title>Efeitos e Animações em CSS3</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      .circulo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: table;
+      }
+
+      .circulo1 {
+        left: 0;
+        position: absolute;
+        background: blue;
+        animation: anim-circulo1 5s infinite;
+        background: blue; /* For browsers that do not support gradients */
+        background: -webkit-radial-gradient(blue, #0000BB); /* Safari 5.1 to 6.0 */
+        background: -o-radial-gradient(blue, #0000BB); /* For Opera 11.6 to 12.0 */
+        background: -moz-radial-gradient(blue, #0000BB); /* For Firefox 3.6 to 15 */
+        background: radial-gradient(blue, #0000BB); /* Standard syntax */
+      }
+
+      .circulo2 {
+        right: 0;
+        position: absolute;
+        background: red;
+        animation: anim-circulo2 5s infinite;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-radial-gradient(red, #A30000); /* Safari 5.1 to 6.0 */
+        background: -o-radial-gradient(red, #A30000); /* For Opera 11.6 to 12.0 */
+        background: -moz-radial-gradient(red, #A30000); /* For Firefox 3.6 to 15 */
+        background: radial-gradient(red, #A30000); /* Standard syntax */
+      }
+
+
+     @keyframes anim-circulo1 {
+       0%{
+         left: 0;
+         transform: scale(1);
+       }
+
+       25%{
+         left: 50%;
+         transform: scale(1.8);
+         z-index: 99;
+       }
+
+       50%{
+         left: 90%;
+         transform: scale(1);
+       }
+
+       75%{
+         left: 50%;
+         transform: scale(.3);
+       }
+
+       100%{
+         left: 0;
+         transform: scale(1);
+       }
+     }
+
+     @keyframes anim-circulo2 {
+       0%{
+         right: 0;
+         transform: scale(1);
+       }
+
+       25%{
+         right: 50%;
+         transform: scale(.3);
+         z-index: 9;
+       }
+
+       50%{
+         right: 90%;
+         transform: scale(1);
+       }
+
+       75%{
+         right: 50%;
+         transform: scale(1.8);
+         z-index: 99;
+       }
+
+       100%{
+         right: 0;
+         transform: scale(1);
+       }
+     }
+
+    </style>
   </head>
-
-  <style>
-    .box {
-      width: 500px;
-      height: 60px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-
-    .circulo {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: table;
-    }
-
-    .circulo1 {
-      left: 0;
-      position: absolute;
-      background: blue;
-      animation: anim-circulo1 5s infinite;
-    }
-
-    .circulo2 {
-      right: 0;
-      position: absolute;
-      background: red;
-      animation: anim-circulo2 5s infinite;
-    }
-
-
-
-   @keyframes anim-circulo1 {
-     0%{
-       left: 0;
-       transform: scale(1);
-     }
-
-     25%{
-       left: 50%;
-       transform: scale(1.8);
-       z-index: 99;
-     }
-
-     50%{
-       left: 90%;
-       transform: scale(1);
-     }
-
-     75%{
-       left: 50%;
-       transform: scale(.3);
-     }
-
-     100%{
-       left: 0;
-       transform: scale(1);
-     }
-   }
-
-   @keyframes anim-circulo2 {
-     0%{
-       right: 0;
-       transform: scale(1);
-     }
-
-     25%{
-       right: 50%;
-       transform: scale(.3);
-       z-index: 9;
-     }
-
-     50%{
-       right: 90%;
-       transform: scale(1);
-     }
-
-     75%{
-       right: 50%;
-       transform: scale(1.8);
-       z-index: 99;
-     }
-
-     100%{
-       right: 0;
-       transform: scale(1);
-     }
-   }
-
-  </style>
-
   <body>
     <div class="box">
       <div class="circulo circulo1"></div>
